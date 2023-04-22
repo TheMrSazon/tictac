@@ -1,0 +1,20 @@
+{
+  "name": "infintiymint-javascript-boilerplate",
+  "homepage": "https://github.com/0x0zAgency/infinitymint-beta#readme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "ganache": "npx infinitymint -- --start-ganache -- --stay-open",
+    "postinstall": "npx hardhat compile && npx tsc"
+  },
+  "_moduleAliases": {
+    "@app": "./node_modules/infinitymint/dist/app/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "infinitymint": "latest"
+  }
+}
